@@ -1,0 +1,76 @@
+
+Slideshow
+
+ Author: Dominic Dingena
+ Company: WeDesign
+
+ Copyright notice, do not remove:
+  This work is open source and licensed under a Creative Commons GNU General Public License License
+  http://creativecommons.org/licenses/GPL/2.0/
+
+ Summmary:
+  To be applied to an UL
+  Each list item will be faded to the next
+  Requires jQuery.
+
+ Slideshow property/method list, default values in square brackets:
+  @property @object options
+    @property duration:   fadeOut speed (ms) [3000]
+    
+    @property interval:   pause between fading (ms) [3000]
+    
+    @property wrap:       wrap the provided ul [true]
+                          note: some form of wrapping
+                          is needed this options merely
+                          allows to provide your own
+    
+    @property class:      additional class for the
+                          wrapping element [null]
+
+    @property addBullets: add bullets to indiciate the
+                          current image and allow traversing
+                          through the images. [true]
+
+
+    @property bullet:     the HTML for the bullet
+                          ['<img src="images/bullet.png" />']                  
+  end options
+  
+  @method play            Start/continue the slideshow.
+
+  @method pause           Stops/pauses the slideshow.
+
+
+ Usage:
+   new Slideshow('ul.my-list', {
+     duration: 1000,
+     interval: 2000
+   });
+
+ Notes on styling:
+   Some styling is needed for the plugin to work. This is not covered
+   in the javascript following as I don't like it that way. See the example
+   that came with this file for ideas on styling.
+   I will cover the necessities here. 
+
+   The list of items is wrapped in a div with class of "slideshow_wrap"
+   this div will need a fixed height and width, overflow set to hidden,
+   and position set to relative
+   E.g.:
+     .slideshow_wrap{
+       height:200px;
+       width:400px;
+       overflow:hidden;
+       position:relative;
+     }
+
+   The list items themselves need to be displayed as "inline-block" and set to
+   an absolute position.
+   E.g.:
+     ul.my-list li{
+       display: inline-block;
+       position: absolute;
+     }
+
+   The bullets are contained in a div with class "bullets", the anchor tag of the
+   bullet corresponding to the current image is given a class of "active-slide".

@@ -1,0 +1,83 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:62.5%;
+	font-family:"Century Gothics", "Lucida Sans", verdana, arial, sans;
+	background:#181818;
+	color:#fff;
+	padding-top:10em;
+}
+/**
+ * Typography
+ */
+h1{
+  text-align:center;
+  font-size:3.6em;
+  text-shadow:0 1px 2px #000;
+}
+h3{
+  text-align:center;
+  font-size:1.4em;
+  font-style:italic;
+  text-shadow:0 1px 2px #000;
+  margin:0.4em 0 4em;
+}
+p{
+  text-align:center;
+  font-size:1.1em;
+}
+a{
+  color:#bbb;
+  text-decoration:none;
+}
+
+/**
+ * Slideshow
+ */
+
+.slideshow_wrap{
+	width:874px;
+	height:159px;
+	overflow:hidden;
+	position:relative;
+	margin:0 auto;
+	-moz-box-shadow:0px 2px 4px #000;
+	-webkit-box-shadow:0px 2px 4px #000;
+}
+.slides{
+	position:relative;
+	list-style:none;
+}
+.slides li{
+	position:absolute;
+}
+
+.slides .description{
+	width:139px;
+	height:139px;
+	background:url(images/slideshow_description.png);
+	position:absolute;
+	right:0;
+	font-size:1.2em;
+	padding:10px;
+}
+
+.bullets{
+	position:absolute;
+	left:752px;
+	bottom:10px;
+	z-index:999;
+}
+.bullets a{
+	margin-right:0.8em;
+}
+.bullets img{
+	opacity:0.4;
+	border:none;
+}
+
+.bullets .active-slide img{
+	opacity:1;
+}
