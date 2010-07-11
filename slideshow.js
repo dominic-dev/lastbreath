@@ -1,5 +1,5 @@
 /**
- * Slideshow
+ * Slideshow - lastbreath
  *
  *  Author: Dominic Dingena
  *  Company: WeDesign
