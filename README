@@ -41,6 +41,10 @@ Slideshow
 
 
  Usage:
+   // With defaults
+   new Slideshow('ul.mylist');
+
+   // With options
    new Slideshow('ul.my-list', {
      duration: 1000,
      interval: 2000,
@@ -49,7 +53,7 @@ Slideshow
 
  Notes on styling:
    Some styling is needed for the plugin to work. This is not covered
-   in the javascript following as I don't like it that way. See the example
+   in the javascript following, as I don't like it that way. See the example
    that came with this file for ideas on styling.
    I will cover the necessities here. 
 
